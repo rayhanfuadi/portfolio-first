@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwind CSS</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-medium text-lg text-dark py-6 block">ehanportofolio</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="hamburger" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full flex items-center lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">Clients</a>
+                            </li>
+                            <li class="blog">
+                                <a href="#blog" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="contact">
+                                <a href="#contact" class="text-base text-regular py-2 flex mx-8 group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Hi Semua👋, Saya <span class="block font-bold text-dark text-4xl lg:text-5xl mb-2 ">Rayhan Fuadi</span></h1>
+                    <h2 class="font-medium text-regular mb-4">UI/UX Desginer | Front End Developer</h2>
+                    <p class="leading-relaxed text-base text-regular mb-10">Selamat datang di Galeri saya! btw saya sedang swifting carier dari designer menjadi <span class="text-dark font-medium">Front End Developer.</span></p>
+                    <a href="https://www.instagram.com/rayhanfuadi" target="_blank" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ">Call Me!</a>
+                </div>
+
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="mt-10 relative">
+                        <img src="dist/img/ehan.png" alt="Rayha Fuadi" class=" max-w-full mx-auto" />
+                        <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2">
+                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#F2CF30" d="M46.5,-60.8C55.2,-48.2,53.7,-28.7,52.4,-12.7C51,3.3,50,15.7,46.1,30.5C42.2,45.3,35.5,62.3,22,72.3C8.5,82.4,-11.8,85.4,-28.7,79.1C-45.6,72.9,-58.9,57.3,-66,40.4C-73.1,23.4,-73.9,5.1,-67.6,-8.6C-61.3,-22.4,-47.8,-31.6,-35.3,-43.6C-22.9,-55.6,-11.4,-70.3,3.7,-74.7C18.9,-79.2,37.8,-73.4,46.5,-60.8Z" transform="translate(100 100) scale(1.2)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold text-primary text-lg mb-3 uppercase">Tentang Saya</h4>
+                    <h2 class="font-semibold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk, Kenal lebih lanjut</h2>
+                    <p class="text-base text-sm text-regular max-w-xl lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam alias iste facere tempora hic, ipsum minus!</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-3xl pt-10 lg:text-4xl mb-5">Mari Berteman</h3>
+                    <p class="font-normal text-sm text-regular max-w-xl mb-6 sm:text-lg lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est id architecto tempora laboriosam quasi soluta, esse distinctio nemo?</p>
+                    <div class="flex items-center">
+                        <!-- Youtube -->
+                        <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-regular hover:bg-dark hover:text-white text-slate-400 transition duration-100 ease-in-out" href="https://youtube.com/rayhanfuadi1" target="_blank">
+                            <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-regular hover:bg-dark hover:text-white text-slate-400 transition duration-100 ease-in-out" href="https://instagram.com/rayhanfuadi" target="_blank">
+                            <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></svg>
+                        </a>
+
+                        <!-- Thread -->
+                        <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-regular hover:bg-dark hover:text-white text-slate-400 transition duration-100 ease-in-out" href="https://www.threads.net/@rayhanfuadi" target="_blank">
+                            <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Threads</title><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></svg></svg>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-medium text-lg text-regular mb-2">Portfolio</h4>
+                    <h2 class="font-semibold text-2xl text-dark mb-4 sm:text-4xl lg:text-5xl">Project Terkini</h2>
+                    <p class="font-normal text-sm text-regular md:text-lg lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id nam culpa animi beatae harum nostrum in deleniti velit reprehenderit.</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-10 px-4 pt-4 md:w-1/2 text-center">
+                    <div class="rounded-md shadow-md overflow-hidden mb-5 duration-300 ease-in-out hover:scale-105 hover:origin-bottom">
+                        <img src="dist/img/portfolio/1.png" alt="Study connections">
+                    </div>
+                    <h3 class="font-medium text-xl text-dark mb-1">Study Connections</h3>
+                    <p class="font-normal text-base text-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis illo dolorum corrupti fuga ducimus assumenda quam eum quae libero.</p>
+                </div>
+                <div class="mb-10 px-4 pt-4 md:w-1/2 text-center">
+                    <div class="rounded-md shadow-md overflow-hidden mb-5 duration-300 ease-in-out hover:scale-105 hover:origin-bottom">
+                        <img src="dist/img/portfolio/2.png" alt="Information Systems">
+                    </div>
+                    <h3 class="font-medium text-xl text-dark mb-1">Information Systems</h3>
+                    <p class="font-normal text-base text-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis illo dolorum corrupti fuga ducimus assumenda quam eum quae libero.</p>
+                </div>
+                <div class="mb-10 px-4 pt-4 md:w-1/2 text-center">
+                    <div class="rounded-md shadow-md overflow-hidden mb-5 duration-300 ease-in-out hover:scale-105 hover:origin-bottom">
+                        <img src="dist/img/portfolio/3.png" alt="Instations Website">
+                    </div>
+                    <h3 class="font-medium text-xl text-dark mb-1">Instations Website</h3>
+                    <p class="font-normal text-base text-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis illo dolorum corrupti fuga ducimus assumenda quam eum quae libero.</p>
+                </div>
+                <div class="mb-10 px-4 pt-4 md:w-1/2 text-center">
+                    <div class="rounded-md shadow-md overflow-hidden mb-5 duration-300 ease-in-out hover:scale-105 hover:origin-bottom">
+                        <img src="dist/img/portfolio/4.png" alt="Wedding Design">
+                    </div>
+                    <h3 class="font-medium text-xl text-dark mb-1">Wedding Design</h3>
+                    <p class="font-normal text-base text-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis illo dolorum corrupti fuga ducimus assumenda quam eum quae libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
+
+    <!-- Clients Start -->
+    <section id="clients" class="pt-36 pb-32 bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-medium text-lg text-regular mb-2">Clients</h4>
+                    <h2 class="font-semibold text-2xl text-soft mb-4 sm:text-4xl lg:text-5xl">Yang pernah Bekerjasama.</h2>
+                    <p class="font-normal text-sm text-regular md:text-lg lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat in quos autem quam? Itaque.</p>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#" class="flex justify-center items-center max-w-[120px] max-h-[40px] mx-4 py-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-105 hover:origin-bottom transition duration-150 lg:mx-6 xl:mx-8 my-4">
+                        <img src="dist/img/clients/1.svg" alt="google">
+                    </a>
+                    <a href="#" class="flex justify-center items-center max-w-[120px] max-h-[40px] mx-4 py-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-105 hover:origin-bottom transition duration-150 lg:mx-6 xl:mx-8 my-4">
+                        <img src="dist/img/clients/2.svg" alt="grab">
+                    </a>
+                    <a href="#" class="flex justify-center items-center max-w-[120px] max-h-[40px] mx-4 py-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-105 hover:origin-bottom transition duration-150 lg:mx-6 xl:mx-8 my-4">
+                        <img src="dist/img/clients/3.svg" alt="shopee">
+                    </a>
+                    <a href="#" class="flex justify-center items-center max-w-[120px] max-h-[40px] mx-4 py-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-105 hover:origin-bottom transition duration-150 lg:mx-6 xl:mx-8 my-4">
+                        <img src="dist/img/clients/4.svg" alt="tokopedia">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Start -->
+
+    <!-- Blogs Start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-medium text-lg text-regular mb-2">Blog</h4>
+                    <h2 class="font-semibold text-2xl text-dark mb-4 sm:text-4xl lg:text-5xl">Tulisan Terbaru</h2>
+                    <p class="font-normal text-sm text-regular md:text-lg lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non id nam culpa animi beatae harum nostrum in deleniti velit reprehenderit.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+                    <div class="bg-white rounded-xl overflow-hidde shadow-lg mb-10 hover:scale-105 origin-bottom duration-200 ease hover:shadow-xl ease-in-out">
+                        <img src="dist/img/blogs/1.jpg" alt="programming" class="w-full rounded-xl object-cover object-center max-h-[200px]" />
+                        <div class="py-6 px-6">
+                            <a href="#" class="block text-lg font-medium text-dark mb-2 truncate">Tips Belajar Programming</a>
+                            <p class="text-base leading-relaxed text-regular mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis laboriosam corrupti harum eius similique commodi ducimus hic omnis quisquam.</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="text-sm py-2 px-4 rounded-xl bg-primary font-medium text-dark hover:bg-yellow-500">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+                    <div class="bg-white rounded-xl overflow-hidde shadow-lg mb-10 hover:scale-105 origin-bottom duration-200 hover:shadow-xl ease-in-out">
+                        <img src="dist/img/blogs/2.jpg" alt="Design" class="w-full rounded-xl object-cover object-center max-h-[200px]" />
+                        <div class="py-6 px-6">
+                            <a href mb-2="#" class="block text-lg font-medium text-dark truncate">Tips Belajar Design</a>
+                            <p class="text-base leading-relaxed text-regular mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis laboriosam corrupti harum eius similique commodi ducimus hic omnis quisquam.</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="text-sm py-2 px-4 rounded-xl bg-primary font-medium text-dark hover:bg-yellow-500">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+                    <div class="bg-white rounded-xl overflow-hidde shadow-lg mb-10 hover:scale-105 origin-bottom duration-200 hover:shadow-xl ease-in-out">
+                        <img src="dist/img/blogs/3.jpg" alt="illustration" class="w-full rounded-xl object-cover object-center max-h-[200px]" />
+                        <div class="py-6 px-6">
+                            <a href="#" class="block text-lg font-medium text-dark mb-2 truncate">Tips Belajar Adobe illustration</a>
+                            <p class="text-base leading-relaxed text-regular mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis laboriosam corrupti harum eius similique commodi ducimus hic omnis quisquam.</p>
+                            <div class="flex justify-end">
+                                <a href="#" class="text-sm py-2 px-4 rounded-xl bg-primary font-medium text-dark hover:bg-yellow-500">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs End -->
+
+    <!-- Contact Start  -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-medium text-lg text-regular mb-2">Contact</h4>
+                    <h2 class="font-semibold text-2xl text-dark mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+                    <p class="font-normal text-sm text-regular md:text-lg lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magnam.</p>
+                </div>
+            </div>
+            <form action="" class="">
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base text-dark font-semibold">Nama</label>
+                        <input type="text" id="name" class="w-full bg-soft text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base text-dark font-semibold">Email</label>
+                        <input type="text" id="email" class="w-full bg-soft text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base text-dark font-semibold">message</label>
+                        <textarea type="text" id="message" class="w-full bg-soft text-dark rounded-md p-3 focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">Pesan</textarea>
+                    </div>
+                    <div class="w-full px-4 flex justify-end">
+                        <button class="text-base font-medium text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-yellow-500">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact End  -->
+
+    <!-- Footer Start -->
+    <section class="bg-dark pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-base text-soft font-normal md:w-1/3">
+                    <h2 class="font-medium text-3xl mb-4">EHAN Company</h2>
+                    <h3 class="font-medium mb-2">Hubungi Kami</h3>
+                    <p>oke.rayhan1@gmail.com</p>
+                    <p>JL. Randu 1 No.21, Ciracas</p>
+                    <p>Jakarta, 13730</p>
+                </div>
+                <div class="w-full px-4 mb-12 text-base text-soft font-normal md:w-1/3">
+                    <h3 class="font-medium text-lg mb-4">Kategori Tulisan</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="inline-block text-base mb-2 hover:text-primary hover:underline">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base mb-2 hover:text-primary hover:underline">Design</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block text-base mb-2 hover:text-primary hover:underline">Illustration</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 text-base text-soft font-normal md:w-1/3">
+                    <h3 class="font-medium text-lg mb-4">Tautan</h3>
+                    <ul>
+                        <li>
+                            <a href="#home" class="inline-block text-base mb-2 hover:text-primary hover:underline">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block text-base mb-2 hover:text-primary hover:underline">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="inline-block text-base mb-2 hover:text-primary hover:underline">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block text-base mb-2 hover:text-primary hover:underline">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base mb-2 hover:text-primary hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-10 border-t border-y-emerald-50">
+                <div class="flex items-center justify-center mb-4">
+                    <!-- Youtube -->
+                    <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-soft opacity-70 hover:opacity-100 hover:bg-dark hover:text-white text-soft transition duration-100 ease-in-out" href="https://youtube.com/rayhanfuadi1" target="_blank">
+                        <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-soft opacity-70 hover:opacity-100 hover:bg-dark hover:text-white text-soft transition duration-100 ease-in-out" href="https://instagram.com/rayhanfuadi" target="_blank">
+                        <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></svg>
+                    </a>
+
+                    <!-- Thread -->
+                    <a class="w-10 h-10 mr-3 rounded-full flex justify-center items-center border border-slate-200 hover:border-soft opacity-70 hover:opacity-100 hover:bg-dark hover:text-white text-soft transition duration-100 ease-in-out" href="https://www.threads.net/@rayhanfuadi" target="_blank">
+                        <svg width="20" role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Threads</title><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg></svg></svg>
+                    </a>
+                </div>
+            </div>
+            <p class="text-soft text-sm text-center mt-2">Dibuat oleh <a href="https://www.instagram.com/rayhanfuadi" class="hover:underline" target="_blank">rayhanfuadi</a>, copyright-2024</p>
+        </div>
+    </section>
+    <!-- Footer Start -->
+
+    <!-- javascript -->
+    <script src="dist/js/main.js"></script>
+</body>
+</html>
