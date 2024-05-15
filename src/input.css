@@ -7,13 +7,12 @@ body{
 }
 
 .navbar-fixed {
-    @apply fixed z-[9999] bg-white bg-opacity-60;
-    backdrop-filter: blur(5px);
-    box-shadow:  0 1px 12px 0 rgba(0, 0, 0, 0.1);
+    @apply fixed z-[9999] dark:bg-dark dark:bg-opacity-50 bg-white bg-opacity-60 backdrop-blur-sm; 
+    box-shadow:  0 1px 12px 0 rgba(0, 0, 0, 0.1); 
 }
 
 .hamburger-line{
-    @apply w-[30px] h-[2px] my-2 block bg-dark
+    @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-soft;
 }
 
 .hamburger-active > span:nth-child(1){
@@ -26,4 +25,8 @@ body{
 
 .hamburger-active > span:nth-child(2){
     @apply scale-0
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
 }
